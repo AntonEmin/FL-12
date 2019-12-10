@@ -20,11 +20,6 @@
     .tm-main-content {
         padding: 10px  0 0;
     }
-    .tm-banner-text {
-        word-spacing: 10px;
-        letter-spacing: 5px;
-    }
-    
     .flex-item {
         max-width: none;
         padding: 0 60px;
@@ -36,20 +31,19 @@
     }
     .padding-medium ol {
         list-style-type: none;
-        text-align: left;
+        text-align: right;
         color: inherit;
         padding: 0 29%;
 
     }
     .padding-medium li:nth-child(even) {
-        text-align: right;
+        text-align: left;
     }
     
     .padding-medium h2 {
         color: lightskyblue;
     }
-    .padding-medium li:first-letter {
-        font-size: 150%;
+    div.padding-medium>ol>li a{
         color: lightskyblue;
     }
     .padding-medium a {
@@ -64,6 +58,13 @@
     }
     .carousel {
         padding: 0 0 ;
+    }    
+    section.blocks>div p:last-of-type {
+        letter-spacing: 5px;
+        word-spacing: 10px;
+    }
+    section#ideas p {
+        padding: 0;
     }
 }
 
