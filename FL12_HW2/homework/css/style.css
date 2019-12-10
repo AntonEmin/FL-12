@@ -93,6 +93,9 @@
     .tm-banner-inner {
         background-color: #ffffff; 
     }
+    section>div.tm-content-box>div.tm-team-description-container h2 {
+        padding-left: 50px;
+    }
     p.tm-banner-text {              
         text-shadow: 4px 4px 3px #333;
         animation: shuffle 2s ;
@@ -145,10 +148,12 @@
     div.carousel p {
         text-indent: 25px;
         line-height: 30px;
-    }
-    
+    }    
     .section>div#about>ul li:nth-child(even) {
-        background-color: whitesmoke;
+        background-color: whitesmoke;        
+    }
+    section.blocks>div>ul  li {
+        padding: 5px;        
     }
     .contact-form input {
         border-bottom: 3px solid lightskyblue;
@@ -183,7 +188,7 @@
         color: lightskyblue;
     }
     button.submit-btn:hover {
-        background-color: #a0d8f9;
+        background-color: lightblue;
         border-color: #a0d8f9;
     }
     .tm-main-nav a:hover {
