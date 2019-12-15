@@ -1,1 +1,150 @@
-// Write your styles here
+html{
+    margin: 0;
+}
+body {
+    width: 100%; 
+    margin: 0;   
+}
+.header {        
+    background-image: url($headerImg);
+    background-position: center;
+    background-size: cover;    
+    border-bottom-right-radius: 38%;
+    height:716px;    
+    &-wrap {
+        width: 50%;
+        height: 70%;
+        margin: 0 9%;                    
+        div {
+            display: flex;
+            justify-content: space-between;
+            height:15%;
+            width: 53%; 
+        }
+        .landing-logo {
+            display: inline-flex;
+            width: min-content;
+            height: 10%;
+        } 
+    }
+    &_heading {
+        width: 60%;
+        height: 40%;
+        margin-top: 8%;
+        margin-left: 1%;
+        margin-bottom: 0;       
+        font-size: 4.4rem;
+        letter-spacing: 0.1rem;
+        line-height: 4.6rem;
+        word-spacing: 0.1rem;
+        font-weight: bold;
+        font-family: map-get($font, hind), sans-serif;
+    }
+    &_text {
+        width: 60%;
+        height: 25%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 1%;
+        word-spacing: 1px;
+        line-height: 22px;
+        font-family: map-get($font, hind), sans-serif;
+    }    
+    &_button {
+        margin-top: 5%;
+        margin-left: 2%;        
+        width: 27%;
+        color: #fff;
+        background-color: $buttonColor;
+        border: none;
+        font-size: 1.1rem;
+    }   
+}
+.login {
+    margin-top: 7%;
+    font-size: 1.25rem;
+    color: #fff;
+    font-family: map-get($font, hind), sans-serif; 
+}
+
+.landing-logo {    
+    padding-top: 2%;
+    margin-left: 1%;
+    img{
+        height: 90%;
+    }    
+    p {
+        margin: 0;
+        margin-left: 10%;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        font-family: map-get($font, hind), sans-serif;          
+     }
+     span {
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        white-space: nowrap;
+        font-size: 0.7rem;
+        font-weight: lighter;        
+    }
+}
+.section {    
+    margin: 2% 20%;
+    width: 60%;
+    height: 1400px;
+    color: #fff;
+    &_text {
+        margin-bottom: 4%;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-family: map-get($font, sspro), sans-serif;
+        letter-spacing: 1px;
+        color: #000;
+    }
+    &_card_wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75%;        
+    }
+    &_card {
+        display: flex;
+        flex-direction: row;
+        height: 30%;        
+        background-color: $cardBgColor;
+        border-radius: 10px; 
+
+    }
+    &_card_img {
+        margin: 2%;
+        width: 95%;
+        border-radius: 10px;           
+
+    }
+    &_card_right_container {
+
+    }
+    &_card_heading {
+
+    }
+    &_card_text {
+
+    }
+    &_link {
+
+    }
+    
+}
+.footer {
+    background-color: $footerColor;
+}
+.footer-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    width: 80%;
+    margin: 0 10%;
+}
