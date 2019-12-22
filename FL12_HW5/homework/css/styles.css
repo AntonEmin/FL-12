@@ -114,7 +114,7 @@ nav {
     justify-content: flex-end;
     align-items: flex-start;
 
-    margin-block-end: 4%;    
+    margin-bottom: 2rem;    
     background-image: url("../img/post0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,7 +125,7 @@ nav {
     width: 82%;
     padding-left: 2rem;    
     font-size: 3vw;
-    font-weight: 250;
+    font-weight: 300;
   }
   .header-story-description {
     width: 82%;  
