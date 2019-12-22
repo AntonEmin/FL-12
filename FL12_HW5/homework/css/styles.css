@@ -11,6 +11,10 @@
 }
 
 body {
+  max-width: 480px;
+  margin-top: 0;
+  background-color: #0b192f;  
+  color: #fff;
   font-family: roboto;
 }
 .post-1 {
@@ -30,3 +34,147 @@ body {
 }
 
 /* Your styles go here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  max-width: 480px;
+  margin-top: 0;
+  background-color: #0b192f;  
+  color: #fff;
+}
+
+header {
+  margin: 0 2.7%;
+}
+footer {
+  background-color: #024161 ;
+}
+.site-title-span {
+  color: #a36;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;  
+  
+}
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-width: 100%;  
+  display: block;
+}
+nav {
+  display: none;
+}
+.header {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: space-between;
+  height: 47vw;
+  margin-block-end: 5.5%;
+  background-color: #024161;  
+}
+.nav-icon {  
+  margin-block-start: 1.4rem;
+  font-size: 5vw;  
+}
+.site-title {
+  margin-block-start: 0;
+  margin-block-end: 13.2%;  
+  font-size: 8vw;
+  font-weight: 200;
+}
+.header-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 4%;
+
+  height: 79.5vw;
+  background-image: url("../img/post0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.header-story-heading{
+  width: 82%;
+  margin-block-start: 11vh;
+  
+  font-size: 10.3vw;
+  letter-spacing: .03rem;
+  line-height: 3.1rem;
+  font-weight: 250;
+}
+.header-story-description {
+  width: 82%;  
+  margin-block-start: 5vw;
+  font-size: 3.25vw;
+  font-weight: 500;
+  line-height: 5.4vw;
+  word-spacing: .01vw;
+}
+.container {  
+  margin: 2.7%;
+}
+.post-content {  
+  height: 62.5vw;  
+  width: 75%;
+  }
+.post-header { 
+  margin-block-end: 1rem;
+  font-size: 10.5vw;
+  font-weight: 300;
+  line-height: 10.7vw;
+  opacity: 0.7; 
+}
+.post-text {
+  margin-block-end: 1vw;
+  font-size: 3.15vw;
+  font-weight: 500;
+  line-height: 4.5vh;
+  opacity: 0.33;
+}
+.post-date-container {
+  text-align: left;
+  width: 16%;
+}
+.post-date {
+  width: 70%;  
+  margin-top: 4.2vw;
+  text-align: center;
+  font-size: 11vw;
+  font-weight: 200;
+  line-height: 9.5vw;
+  opacity: .2;  
+  }
+.post-date span {
+  font-size: 5.5vw;    
+}
+.news-content {  
+  height: 36vh;
+  margin-block-end: 4.5%;  
+  color: #000;
+  background-color: #fff;
+}
+.news-header {
+  width: 84%;
+  margin-block-end: 2vw;
+  font-size: 6vw;
+  font-weight: 300;
+}
+.news-text {
+  width: 84%;
+  font-size: 3.2vw;
+  word-spacing: .01rem;
+}
+
