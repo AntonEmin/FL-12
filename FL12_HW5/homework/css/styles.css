@@ -2,35 +2,27 @@
  * Feel free to change name of colors if you need it
  * Feel free to add new colors if you need it
  */
-:root {
-    --bg-color--dark: #0b192f;
-    --bg-color--header: #024161;
-    --link: #fff;
-    --link--hover: #1f52a4;
-    --bg-footer-color: #024161;
-  }
-  
-  body {    
-    margin: 0 2.7%;
-    background-color: #0b192f;  
-    color: #fff;
-    font-family: roboto; 
-    font-weight: 100;   
-  }
-  .post-1 {
-      background: #9d27b0;
-  }
-  .post-2 {
-      background: #9bb800;
-  }
-  .post-3 {
-      background: #ed5120;
-  }
-  .post-4 {
-      background: #9d27b0;
-  }
+body {    
+margin: 0 2.7%;
+background-color: #0b192f;  
+color: #fff;
+font-family: roboto; 
+font-weight: 100;   
+}
+.post-1 {
+    background: #9d27b0;
+}
+.post-2 {
+    background: #9bb800;
+}
+.post-3 {
+    background: #ed5120;
+}
+.post-4 {
+    background: #9d27b0;
+}
 .post-5 {
-      background: #2d95bb;
+    background: #2d95bb;
 }
 
 /* Your styles go here */
@@ -62,9 +54,9 @@ nav {
 }
 .site-title {
     margin-top: 0;  
-  margin-bottom: 13.2%;  
-  font-size: 2rem;
-  font-weight: 200;
+    margin-bottom: 13.2%;  
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 @media (min-width: 769px) {
@@ -104,7 +96,7 @@ nav {
     }
     .list-item a:hover {
         background-color: #1f52a4 ;
-    }
+    }    
 }
 
 .header-story {
@@ -113,40 +105,38 @@ nav {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-
     margin-bottom: 2rem;    
     background-image: url("../img/post0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
         
-  }
-  .header-story-heading{
-    width: 82%;
-    padding-left: 2rem;    
-    font-size: 3vw;
-    font-weight: 300;
-  }
-  .header-story-description {
-    width: 82%;  
-    padding-left: 2rem;
-    font-size: 2vw;
-    opacity: .6;
-    
-  }
+}
+.header-story-heading{
+width: 82%;
+padding-left: 2rem;    
+font-size: 3em;
+font-weight: 300;
+}
+.header-story-description {
+width: 82%;  
+padding-left: 2rem;
+font-size: 1.2em;
+opacity: .6;    
+}
 
 .post-container {
-    display: flex;
-    justify-content: flex-end ;
+display: flex;
+justify-content: flex-end ;
 }
 .post-content {
-    width: 77%;
+width: 77%;
 }
 .post-date {
-    width: 13%;
+width: 13%;
 }
 
- .post-header {
+.post-header {
     margin-bottom: 0;
     font-size: 3.3rem;
     font-weight: 100;
@@ -173,7 +163,7 @@ nav {
 .news-content {   
     width: 85%;
     margin-left: 2rem;     
-  }
+}
 .news-header {   
     margin: 0;
     padding-top: 2rem;
@@ -187,7 +177,7 @@ nav {
     white-space: pre-line;
 }
 footer {
-    margin-top: 1rem;
+    margin: 1rem  0;
     font-size: .9rem;
     opacity: .4;
     background-color: #024161;
@@ -201,7 +191,9 @@ footer {
  {
     margin: 0;
 }
-
+.right-info p:last-of-type {
+    padding-bottom: 1rem;    
+}
 
 @media  (min-width: 481px) {
     .container {
