@@ -1,7 +1,6 @@
 let a = Number.parseInt(prompt('Enter your a for triangle sides length.'));
 let b = Number.parseInt(prompt('Enter your b for triangle sides length.'));
 let c = Number.parseInt(prompt('Enter your c for triangle sides length.'));
-
 if (isNaN(a) || isNaN(b) || isNaN(c) || a < 0 || b < 0 || c < 0) {
     alert('Input values should be ONLY positive NUMBERS !!!');
 } else {
