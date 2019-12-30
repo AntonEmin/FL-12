@@ -3,7 +3,8 @@ let password = '';
 let userPassword = 'UserPass';
 let adminPassword = 'AdminPass';
 let access = false;
-let minLengthEmail = 5;
+const minLengthPassword = 6,
+    minLengthEmail = 5;
 if (email === '' || email === null ) {
     alert('Canceled.');
 } else if(email.length < minLengthEmail) {    
@@ -21,18 +22,20 @@ if (email === '' || email === null ) {
                     if (tempPassword === '' || tempPassword === null) {
                         alert('Canceled.');
                     } else {
-                        if( tempPassword === password) {
+                        if ( tempPassword === password) {
                             tempPassword = prompt('Enter your new password','');                            
-                            const minLengthPassword = 6;                                                        
-                            if (tempPassword.length < minLengthPassword) {
-                                alert('It’s too short password. Sorry.');
-                            } else { 
-                                if (tempPassword !== prompt('Enter password again.', '')) {
-                                    alert('You wrote the wrong password.');
-                                } else {
-                                    password = tempPassword;
-                                    alert('You have successfully changed your password.');
-                                }                                
+                            if (tempPassword === '' || tempPassword === null) {
+                                alert('Canceled.');
+                            } else {                                                       
+                                if (tempPassword.length < minLengthPassword) {
+                                    alert('It’s too short password. Sorry.');
+                                } else { 
+                                    if (tempPassword !== prompt('Enter password again.', '')) {
+                                        alert('You wrote the wrong password.');
+                                    } else {                                        
+                                        alert('You have successfully changed your password.');
+                                    }                                
+                                }
                             }
                         } else {
                             alert('Canceled.');

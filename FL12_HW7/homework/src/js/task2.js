@@ -24,9 +24,10 @@ if (confirm('Do you want to play a game?')) {
             } else {
                 prizePull = thirdAttemptPrize * Math.pow(prizePullStep, loop);
             }
-            let userNumber = parseInt(prompt('Choose a roulette pocket number from 0 to ' + randomRange +
-            '\nAttempts left: ' + attempts + '\nTotal prize: ' + totalPrize + '$\nPossible prize on current attempt: ' +
-            prizePull + '$',''));
+            let userNumber = parseInt(prompt(`Choose a roulette pocket number from 0 to ${randomRange}
+            \nAttempts left: ${attempts}
+            \nTotal prize: ${totalPrize}$
+            \nPossible prize on current attempt: ${prizePull}$`,''));
             if (isNaN(userNumber) || userNumber < 0 || userNumber > randomRange ) {
                 alert('Entered data isn’t number or out of range');                
             } else if (userNumber === randomNumber){
@@ -39,13 +40,13 @@ if (confirm('Do you want to play a game?')) {
             attempts -= 1;
         } 
         if (gameWin) {
-            if (confirm('Congratulation, you won!\nYour prize is: '+ totalPrize +'$\nDo you want to continue?')) {
+            if (confirm(`Congratulation, you won!\nYour prize is:  ${totalPrize} $\nDo you want to continue?`)) {
                 loop += 1;
                 gameWin = false;
                 attempts = firstAttempt;
             } else {
-                totalPrize = 0;
-                alert('Thank you for your participation.\nYour prize is: '+ totalPrize +'$');
+                /*totalPrize = 0;*/
+                alert(`Thank you for your participation.\nYour prize is: ${totalPrize}$`);
                 if (confirm('Do you want to play again?')) {
                     loop = 0;
                     attempts = firstAttempt;
@@ -55,7 +56,7 @@ if (confirm('Do you want to play a game?')) {
             }
         } else {
             totalPrize = 0;
-            alert('Thank you for your participation.\nYour prize is: '+ totalPrize +'$');
+            alert(`Thank you for your participation.\nYour prize is: ${totalPrize}$`);
             if (confirm('Do you want to play again?')) {
                 attempts = firstAttempt;
                 loop = 0;
