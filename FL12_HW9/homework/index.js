@@ -70,6 +70,8 @@ function substitute (array) {
   return mapArray(array, function(el) {
     if (el < 30) {
        return '*';
+    } else {
+        return el;
     }
   })
 }
