@@ -79,3 +79,6 @@ function substitute (array) {
 function getPastDay (date, days) {
   return new Date(new Date().setDate(date.getDate() - days));
 }
+function formatDate (date) {
+  return `${date.getFullYear()}/${date.getMonth()+1}/${date.getDate()} ${date.getHours()}:${date.getMinutes()}`;
+}
