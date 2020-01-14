@@ -27,9 +27,9 @@ function mapArray (array, callback) {
     if (typeof el === 'string') {
       el = + el;
     }
-  result.push(callback(el));
-});   
-return result;
+    result.push(callback(el));
+  });   
+  return result;
 }
 
 function filterArray (array, callback) {
@@ -69,7 +69,7 @@ function getArrayOfKeys (actors, key) {
 function substitute (array) {
   return mapArray(array, function(el) {
     if (el < 30) {
-      el = '*';
+       return '*';
     }
   })
 }
