@@ -1,0 +1,20 @@
+ul {
+  list-style-type: none;
+  cursor: pointer;  
+}
+.material-icons {
+  color: rgb(241, 210, 31);
+  vertical-align: bottom;
+}
+.nested {
+  display: none;
+}
+.active {
+  display: block;
+}
+.file {
+  color: rgb(167, 164, 164);
+}
+span:hover {
+  background-color: lightslategray;
+}
